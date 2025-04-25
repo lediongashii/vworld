@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Programeri Virtual | Dokumentimi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #212529;
+    }
+
+    .navbar {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .hero {
+      background: linear-gradient(to right, rgba(8, 8, 8, 0.508),rgba(0, 0, 0, 0.333)),
+        url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1470&q=80') no-repeat center center / cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    p{
+      color: white;
+    }
+    li{
+      color: white;
+    }
+    strong{
+      color: white;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .section {
+      padding: 60px 0;
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    .section:last-child {
+      border-bottom: none;
+    }
+
+    .section h2 {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .code-block {
+      background-color: #212529;
+      color: #f8f9fa;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      font-family: monospace;
+    }
+
+    footer {
+      background: #fff;
+      padding: 30px 0;
+      text-align: center;
+      border-top: 1px solid #dee2e6;
+    }
+    h2{
+      color: rgb(201, 154, 154);
+    }
+
+    footer p {
+      margin: 0;
+      color: #6c757d;
+    }
+
+    .icon {
+      color: #0d6efd;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+    <div class="container">
+      <a style="color: white;" class="navbar-brand fw-bold" href="#">Dokumentimi 📰</a>
+      <div class="ms-auto">
+        <a href="/sistemet" class="btn btn-outline-primary">Kthehu te Aplikacioni</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <h1 class="display-5 fw-bold"><i class="bi bi-laptop icon"></i>Programeri Virtual</h1>
+      <p class="lead">Mëso si të navigosh dhe përdorësh platformën Virtual World Kosova.</p>
+    </div>
+  </header>
+
+  <!-- Main Sections -->
+  <div class="container">
+
+    <!-- Hyrja -->
+    <div class="section">
+      <h2><i class="bi bi-person-lock icon"></i>1. Hyrja në aplikacion</h2>
+      <p>Përdoruesit mund të hyjnë përmes faqes së login ose të krijojnë një llogari të re.</p>
+      <ul>
+        <li><strong>Login:</strong> Vendosni emrin dhe fjalëkalimin tuaj.</li>
+        <li><strong>Register:</strong> Krijoni një llogari të re me email, username dhe fjalëkalim.</li>
+      </ul>
+      <div class="code-block">
+        URL: /login<br />
+        URL: /register
+      </div>
+    </div>
+
+    <!-- Zgjedhja e sistemit -->
+    <div class="section">
+      <h2><i class="bi bi-ui-checks-grid icon"></i>2. Zgjedhja e sistemit</h2>
+      <p>Pasi të jeni kyçur, mund të zgjidhni një nga 3 sistemet në dispozicion:</p>
+      <ol>
+        <li>Doktori</li>
+        <li>Mësuesi</li>
+        <li>Programeri</li>
+      </ol>
+      <p>Çdo kartë mund të klikohet dhe do ju çojë në sistemin përkatës.</p>
+    </div>
+
+    <!-- Funksionalitetet -->
+    <div class="section">
+      <h2><i class="bi bi-tools icon"></i>3. Funksionalitetet bazë</h2>
+      <p>Secili sistem ka funksionalitete të ndryshme bazuar në rolin e tij:</p>
+      <ul>
+        <li><strong>Doktori:</strong> Menaxhimi i pacientëve, orareve, konsultave.</li>
+        <li><strong>Mësuesi:</strong> Plani mësimor, nxënësit, testet dhe notat.</li>
+        <li><strong>Programeri:</strong> Projekte, taske, repo dhe bashkëpunim.</li>
+      </ul>
+    </div>
+
+    <!-- Shkëputja -->
+    <div class="section">
+      <h2><i class="bi bi-box-arrow-right icon"></i>4. Shkëputja</h2>
+      <p>Përdoruesi mund të dalë nga sistemi në çdo kohë duke shtypur butonin "Logout" në navbar.</p>
+      <div class="code-block">URL: /logout</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark">
+    <div class="container">
+      <p style="color: white;">&copy; 2025 Virtual World Kosova. Të gjitha të drejtat e rezervuara.</p>
+    </div>
+  </footer>
+
+  <!-- Optional Widget -->
+  <script
+    src="https://static.soulmachines.com/widget-snippet-1.12.0.min.js"
+    data-sm-api-key="eyJzb3VsSWQiOiJkZG5hLWxlZGlvbi1vcmctLXByb2dyYW1lcmkiLCJhdXRoU2VydmVyIjoiaHR0cHM6Ly9kaC5zb3VsbWFjaGluZXMuY2xvdWQvYXBpL2p3dCIsImF1dGhUb2tlbiI6ImFwaWtleV92MV8yNjFhMDIyMS0zNjY1LTQwN2ItYjlmNi1jODBlMzkwNTMzN2YifQ=="
+    defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

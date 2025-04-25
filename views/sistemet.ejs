@@ -1,0 +1,72 @@
+<%- include('partials/header') %>
+<style>
+  .custom-card {
+  background: linear-gradient(to bottom, #ffc107, #fff3cd);
+  border-radius: 1rem;
+  padding: 2rem;
+  color: #212529;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.doctor-card {
+  background: linear-gradient(to bottom, #ffc107, #fff3cd);
+}
+
+.teacher-card {
+  background: linear-gradient(to bottom, #ffcf5c, #fff9e1);
+}
+
+.programmer-card {
+  background: linear-gradient(to bottom, #ffb347, #fff2cc);
+}
+
+</style>
+<!-- External Styles -->
+<link rel="stylesheet" href="/styles/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<div class="container py-5">
+  <h2 class="text-center mb-5 fw-bold">Sistemet në dispozicion 🚀</h2>
+  <div class="row g-4 justify-content-center">
+
+    <div class="col-md-4">
+      <div class="custom-card animate__animated animate__fadeInUp doctor-card">
+        <p class="text-uppercase text-muted small mb-1">Virtual Role</p>
+        <h5 class="fw-bold">Doktori Virtual</h5>
+        <p><i class="bi bi-calendar-event me-2"></i>April 25, 2025</p>
+        <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi ullam numquam veritatis saepe nobis sint dignissimos fugit quam. Incidunt impedit commodi quas quidem corporis cupiditate fuga consectetur quo quaerat in?.</p>
+        <a href="/doctor" class="btn btn-outline-dark mt-auto">Hyr</a>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="custom-card animate__animated animate__fadeInUp teacher-card">
+        <p class="text-uppercase text-muted small mb-1">Virtual Role</p>
+        <h5 class="fw-bold">Mësuesi Virtual</h5>
+        <p><i class="bi bi-calendar-event me-2"></i>April 25, 2025</p>
+        <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis quas aliquid molestias, fugiat sequi maxime, ducimus illum blanditiis minima a quam perspiciatis est velit nobis doloribus saepe distinctio corrupti id.</p>
+        <a href="/teacher" class="btn btn-outline-dark mt-auto">Hyr</a>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="custom-card animate__animated animate__fadeInUp programmer-card">
+        <p class="text-uppercase text-muted small mb-1">Virtual Role</p>
+        <h5 class="fw-bold">Programeri Virtual</h5>
+        <p><i class="bi bi-calendar-event me-2"></i>April 25, 2025</p>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi officia corrupti temporibus ipsa eveniet consequatur. Tempore repellat recusandae quibusdam consectetur nostrum inventore animi ducimus, magni soluta sit ex accusamus.</p>
+        <a href="/programmer" class="btn btn-outline-dark mt-auto">Hyr</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<%- include('partials/footer') %>
